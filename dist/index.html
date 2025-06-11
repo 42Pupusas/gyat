@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/output-4c93cc5f4d5a2d.css" integrity="sha384-lZCs/K8gmSOLYgc8GL0zQ7eBnBHMwA9g+5RTMcfvQ9nbZyrCDaMHcKro8zSmnlSy"/>
+    <link rel="icon" href="public/avocodo.png" />
+    <title>SwappingSats</title>
+
+
+<link rel="modulepreload" href="/gyat_browser-bd796e9a26bdd12d.js" crossorigin="anonymous" integrity="sha384-KU1ud4ATfuRonzqrDNPC9zRFu2Ky0olNteSQoYBjWCAOB0BAEl3HVRDvbUyXv0EY"><link rel="preload" href="/gyat_browser-bd796e9a26bdd12d_bg.wasm" crossorigin="anonymous" integrity="sha384-UelAHzzzUp+QFjSdZeeKNV3ZXdg4A7kHsZ+whTMDIYU30vIiqczaYAo5vbuge7/O" as="fetch" type="application/wasm"></head>
+
+<body>
+
+<script type="module">
+import init, * as bindings from '/gyat_browser-bd796e9a26bdd12d.js';
+const wasm = await init({ module_or_path: '/gyat_browser-bd796e9a26bdd12d_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+
+</html>
+
+<!-- Bitcoin QR web component -->
+<script type="module" src="https://unpkg.com/bitcoin-qr@1.4.1/dist/bitcoin-qr/bitcoin-qr.esm.js"></script>
